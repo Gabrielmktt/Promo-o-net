@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoçoes - Aliexpress</title>
+    <linok rel="stylesheet" href="css/ALi_estilo.css">
 </head>
 <body>
-    
+    <!--Barra de navegacao-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="amazon.html">Amazon</a></li>
+            <li><a href="aliexpress.html">Aliexpress</a></li>
+            <li><a href="shoppe.html">Shoppe</a></li>
+        </ul>
+    </nav>
+<!--Carrosel-->
+<div class="carrosel">
+    <div class="carrosel-images">
+        <img src="#" alt="Imagem 1">
+        <img src="#" alt="Imagem 2"> 
+        <img src="#" alt="Imagem 3">
+        </div>
+          <!-- Botão para mover para o slide anterior -->
+        <button class="prev" onclick="movesSlide(-1)">&#10094;</button>
+         <!-- O atributo `onclick` chama a função `moveSlide(-1)` quando o botão é clicado.
+         A seta &#10094; é um caractere especial em HTML que representa uma seta para a esquerda. -->
+
+        <!-- Botão para mover para o próximo slide -->
+        <button class="next" onclick="movesSlide(1)">&#10094;</button>
+        <!-- O atributo `onclick` chama a função `moveSlide(1)` quando o botão é clicado.
+             A seta &#10095; é um caractere especial que representa uma seta para a direita. -->
+    </div>
+    </div>
+    <script src="java/script.js"></script>
 </body>
 </html>
