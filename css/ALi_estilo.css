@@ -59,6 +59,7 @@ nav ul {
 
 nav a {
     background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
