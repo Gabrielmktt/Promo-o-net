@@ -9,6 +9,7 @@
 <body>
     <!--menu-->
     <nav>
+        <div class="logo">Aliexpress</div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="amazon.html">Amazon</a></li>
@@ -16,31 +17,20 @@
             <li><a href="shoppe.html">Shoppe</a></li>
         </ul>
     </nav>
-<!--Carrosel-->
-<div class="carrosel">
-    <div class="carrosel-images">
-        <!--Inputs para controle-->
-        <input type="radiio" name="carrosel" id="slide1" checked>
-        <input type="radiio" name="carrosel" id="slide2">
-        <input type="radiio" name="carrosel" id="slide3">
-
-
-        <!-- Imagens do carrossel -->
-        <img src="IMAGENS/aliexpress.png" alt="Imagem 1">
-        <img src="IMAGENS/aliexpress1.jpg" alt="Imagem 2"> 
-        <img src="IMAGENS/aliexpress2.jfif" alt="Imagem 3">
+    <!--introdução-->
+    <div class="content">
+        <div class="Promo">
+            <img src="#"alt="promoção 1">
+            <p>Oferta imperdivel</p>
         </div>
-          <!-- Botão para mover para o slide anterior -->
-        <button class="prev" onclick="movesSlide(-1)">&#10094;</button>
-         <!-- O atributo `onclick` chama a função `moveSlide(-1)` quando o botão é clicado.
-         A seta &#10094; é um caractere especial em HTML que representa uma seta para a esquerda. -->
-
-        <!-- Botão para mover para o próximo slide -->
-        <button class="next" onclick="movesSlide(1)">&#10094;</button>
-        <!-- O atributo `onclick` chama a função `moveSlide(1)` quando o botão é clicado.
-             A seta &#10095; é um caractere especial que representa uma seta para a direita. -->
+        <div class="Promo">
+            <img src="#"alt="promoção 2">
+            <p>Oferta imperdivel</p>
+        </div>
+        <div class="Promo">
+            <img src="#"alt="promoção 3">
+            <p>Oferta imperdivel</p>
+        </div>
     </div>
-    </div>
-    <script src="java/script.js"></script>
 </body>
 </html>

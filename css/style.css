@@ -1,0 +1,70 @@
+/*Rseta margens*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font: weigth 600px;
+    list-style:  none;
+}
+
+/*body*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    background-color: #111;
+    color: white;
+    min-height:100vh;
+}
+
+/*navegação*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    width:100%;
+    background-color: #222;
+}
+nav .logo{
+    font-size: 2rem;
+    background: linear-gradient(120deg, hsl(3118, 94%, 61%, 51%));
+    background-clip:text;
+    -webkit-backdrop-clip:text ;
+    -webkit-text-fill-color: transparent;
+    text-decoration:none;
+}
+
+ul{
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+nav a{
+    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%),hsl(239, 69%, 51%));
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+nav a:hover{
+border-bottom: 2pxsollid hsl(239, 695, 51%);
+transition: 0.3s;
+}
+
+/*introdução com texto animado*/
+.introdução{
+    background:-webkit ;
+}
