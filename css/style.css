@@ -1,70 +1,154 @@
-/*Rseta margens*/
+/* Reseta margens, padding e aplica box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui;
-    font: weigth 600px;
-    list-style:  none;
+    font-weight: 600;
+    list-style: none;
 }
-
-/*body*/
-
-body{
+ 
+/* Estilos do corpo da página */
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column ;
+    flex-direction: column;
     background-color: #111;
     color: white;
-    min-height:100vh;
+    min-height: 100vh;
 }
-
-/*navegação*/
-nav{
+ 
+/* Barra de navegação */
+nav {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     padding: 20px;
-    width:100%;
+    width: 100%;
     background-color: #222;
 }
-nav .logo{
+ 
+nav .logo {
     font-size: 2rem;
-    background: linear-gradient(120deg, hsl(3118, 94%, 61%, 51%));
-    background-clip:text;
-    -webkit-backdrop-clip:text ;
+    background: -webkit-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration:none;
+    text-decoration: none;
 }
-
-ul{
+ 
+ul {
     text-transform: uppercase;
 }
-
-nav ul{
+ 
+nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
     align-items: center;
     gap: 30px;
     font-size: 1.2rem;
 }
-
-nav a{
-    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%),hsl(239, 69%, 51%));
+ 
+nav a {
+    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    -webkit-background-clip: text;
     background-clip: text;
-    -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
 
-nav a:hover{
-border-bottom: 2pxsollid hsl(239, 695, 51%);
-transition: 0.3s;
+nav a:hover {
+    border-bottom: 2px solid hsl(239, 69%, 51%);
+    transition: 0.3s;
 }
 
-/*introdução com texto animado*/
-.introdução{
-    background:-webkit ;
+/* Introdução com texto animado */
+.introdução {
+    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+ 
+/* Seção de promoções */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+ 
+.promo {
+    text-align: center;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+ 
+.promo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transform: translateY(0);
+    animation: float 6s ease-in-out infinite;
+}
+ 
+.promo p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+ 
+/* Animação de flutuação das imagens */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+ 
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+ 
+    .promo img {
+        max-width: 90%;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .promo p {
+        font-size: 1rem;
+    }
+ 
+    .introdução {
+        font-size: 1.2rem;
+    }
+ 
+    nav .logo {
+        font-size: 1.5rem;
+    }
+ 
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+ 
+    nav a {
+        font-size: 1rem;
+    }
 }
