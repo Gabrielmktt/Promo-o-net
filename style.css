@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carrossel {
+    width: 100%;
+    overflow: hidden; /* Esconde as imagens fora da área visível */
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Adicionando um efeito de transição automática (carrossel infinito) */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Aplica a animação no carrossel */
+.carrossel .slides {
+    animation: slideAnimation 12s infinite;
+}
