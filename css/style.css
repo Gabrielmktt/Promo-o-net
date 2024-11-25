@@ -66,5 +66,76 @@ transition: 0.3s;
 
 /*introdução com texto animado*/
 .introdução{
-    background:-webkit ;
+    background:-webkit-linear-dradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size:  1.5rem;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
+
+/*Seção de Promoções*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.promo{
+    text-align: center;
+    flex:1 1 300px;
+    margin:10px;
+}
+
+.promo img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transform: translateY(0);
+    animation: float 6s ease-in-out infinite;
+}
+
+.promo p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+ 
+    .promo img {
+        max-width: 90%;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .promo p {
+        font-size: 1rem;
+    }
+ 
+    .introdução {
+        font-size: 1.2rem;
+    }
+ 
+    nav .logo {
+        font-size: 1.5rem;
+    }
+ 
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+ 
+    nav a {
+        font-size: 1rem;
+    }
+}
+ 
