@@ -103,3 +103,39 @@ transition: 0.3s;
     margin-top: 10px;
     color: #fff;
 }
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+ 
+    .promo img {
+        max-width: 90%;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .promo p {
+        font-size: 1rem;
+    }
+ 
+    .introdução {
+        font-size: 1.2rem;
+    }
+ 
+    nav .logo {
+        font-size: 1.5rem;
+    }
+ 
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+ 
+    nav a {
+        font-size: 1rem;
+    }
+}
+ 
