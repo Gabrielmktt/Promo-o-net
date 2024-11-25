@@ -1,35 +1,41 @@
+/* Reseta as margens, padding e aplica box-sizing para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fonte padrão do corpo */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Estilos para o carrossel */
 .carrossel {
-    width: 100%;
-    overflow: hidden; /* Esconde as imagens fora da área visível */
+    width: 100%; /* O carrossel ocupa 100% da largura da tela */
+    overflow: hidden; /* Esconde as imagens que estão fora da área visível */
     position: relative;
 }
 
+/* Container para os slides */
 .slides {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /* Transição suave entre os slides */
 }
 
+/* Cada slide ocupa 100% da largura do carrossel */
 .slide {
-    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    min-width: 100%; 
 }
 
+/* Imagens do carrossel */
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* A imagem ocupa 100% da largura do slide */
+    height: auto; /* A altura da imagem é ajustada automaticamente */
+    display: block; /* Remove o espaço em branco abaixo das imagens */
 }
 
-/* Adicionando um efeito de transição automática (carrossel infinito) */
+/* Animação para o carrossel - transição infinita entre os slides */
 @keyframes slideAnimation {
     0% {
         transform: translateX(0);
@@ -50,5 +56,28 @@ img {
 
 /* Aplica a animação no carrossel */
 .carrossel .slides {
-    animation: slideAnimation 12s infinite;
+    animation: slideAnimation 12s infinite; /* Animação que dura 12 segundos e se repete infinitamente */
 }
+
+/* Responsividade - Ajuste do carrossel para telas menores */
+@media (max-width: 768px) {
+    /* Ajusta a largura do carrossel e das imagens para telas menores */
+    .carrossel {
+        width: 100%;
+    }
+
+    /* Ajuste das imagens para que não distorçam nas telas pequenas */
+    .carrossel img {
+        object-fit: cover; /* Garante que a imagem preencha o slide sem distorcer */
+    }
+}
+
+/* Ajuste para dispositivos móveis ainda menores */
+@media (max-width: 480px) {
+    /* Para telas muito pequenas, o carrossel se ajusta ainda mais */
+    .carrossel {
+        width: 100%;
+    }
+
+    .slide {
+        min-width: 100%; /* Garante que cada slide
