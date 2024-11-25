@@ -14,7 +14,7 @@
     transition: tarsform 0.5s ease-in-out;/* Adiciona uma transição suave ao deslizar as imagens */
 }
 
-.caerrosel-images img {
+.carrosel-images img {
     width: 100%;
     flex-shrink: 0;/* Impede que as imagens diminuam de tamanho */
 }
@@ -59,6 +59,7 @@ nav ul {
 
 nav a {
     background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
