@@ -27,14 +27,12 @@ nav {
 nav .logo {
     font-size: 2rem;
     background: -webkit-gradient  (120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
+   
 }
 
 ul {
     text-transform: uppercase;
+    
 }
 
 nav ul {
@@ -43,6 +41,7 @@ nav ul {
     align-items: center;
     gap: 0 35px;
     font-size: 1.2rem;
+    
 }
 
 nav a {
@@ -51,11 +50,11 @@ nav a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+    transition: ls;
 }
 
 nav a:hover {
     border-bottom: 2px solid hsl(239, 69%, 51%);
-    transition: ls;
 }
 
 .content {
@@ -96,5 +95,53 @@ nav a:hover {
     }
 }
 
+
+/*Carrossel começo
+
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}  /* Esconde as imagens fora da área visível */
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Adicionando um efeito de transição automática (carrossel infinito) */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Aplica a animação no carrossel */
+.carrossel .slides {
+    animation: slideAnimation 12s infinite;
+}
+/*Carrossel Fim
 
 
