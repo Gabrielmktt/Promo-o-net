@@ -66,5 +66,6 @@ transition: 0.3s;
 
 /*introdução com texto animado*/
 .introdução{
-    background:-webkit ;
+    background:-webkit-linear-dradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    -web
 }
