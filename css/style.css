@@ -53,18 +53,20 @@ nav ul {
 nav a {
     background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
- 
+
 nav a:hover {
     border-bottom: 2px solid hsl(239, 69%, 51%);
     transition: 0.3s;
 }
- 
+
 /* Introdução com texto animado */
 .introdução {
     background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
