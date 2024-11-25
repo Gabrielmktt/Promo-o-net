@@ -26,7 +26,8 @@ nav {
 
 nav .logo {
     font-size: 2rem;
-    background: -webkit-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background: -webkit-gradient  -webkit-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -59,7 +60,7 @@ nav a:hover {
 .content {
  display: flex;
  justify-content: center;
- aling-items: center;
+ align-items: center;
  gap: 0px 400px;
 }
 
