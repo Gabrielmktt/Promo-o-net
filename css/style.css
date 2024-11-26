@@ -6,6 +6,7 @@
     font-family: system-ui;
     font-weight: 600;
     list-style: none;
+    color: white;
 }
  
 /* Estilos do corpo da página */
@@ -29,13 +30,9 @@ nav {
     background-color: #222;
 }
  
-nav .logo {
+.logo{
     font-size: 2rem;
-    background: -webkit-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
+    color: white;
 }
  
 ul {
