@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui;
-    font-weight: 600;
-    list-style: none;
 }
 
 body {
@@ -13,6 +11,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #111;
+    font-family: system-ui;
 }
 
 nav {
@@ -32,11 +31,11 @@ nav {
     line-height: 37px;
     padding: 10px;
     font-weight: 600px;
-    
 }
 
 ul {
     text-transform: uppercase;
+    list-style: none;
     
 }
 
@@ -46,6 +45,7 @@ nav ul {
     align-items: center;
     gap: 0 35px;
     font-size: 1.2rem;
+    font-weight: bold;
     
 }
 
@@ -55,12 +55,14 @@ nav a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
-    transition: ls;
+    transition: 0.10s;
 }
 
 nav a:hover {
-    border-bottom: 2px solid hsl(239, 69%, 51%);
-    transform: s;
+    border: 2px solid hsl(239, 69%, 51%);
+    transform: scale(-100%);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .content {
@@ -147,5 +149,4 @@ img {
 .info{
     text-align: left;
 }
-
 
