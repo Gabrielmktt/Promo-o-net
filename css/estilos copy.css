@@ -1,122 +1,50 @@
-*{
-    background-color: #111;
+body {
+    background-color: #111; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 600;
 }
 
-nav{
+header {
+    display: flex;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    padding: 10px;
 }
 
-.logo{
-    font-size: 25px;
+.logo {
+    margin-left: 10px;
+    flex-direction: column;
+    line-height: 10px;
+    font-size: 3rem;
 }
 
-nav ul {
-    text-align: right;
-    margin-right: 20px;
-    margin-top: -56px;
-    font-size: 20px;
+ul{
+    text-transform: uppercase;
 }
 
-nav ul li {
-    display: inline;
+
+    
+
+li{
+    display: inline-block;
+    transition: 0.20s;
+}
+
+a{
+    list-style-type: none;
     margin-right: 10px;
 }
 
-nav a{
+nav a {
+    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
-    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transition: ls;
 }
-
-.content {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 0px 400px;
-}
-
-.content img {
-    width: 25rem;
-    transform: translateY(0);
-    animation: float 6s ease-in-out infinite;
-}
-
-.introdução {
-    background: -webkit-linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: 300px;
-    height: 400px;
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-top: 200px;
-}
-
-@keyframes float {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translate(-50px);
-    }
-    100%
-    {
-        transform: translate(0px);
-    }
-}
-
-
-/*Carrossel começo
-
-.carrossel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}  /* Esconde as imagens fora da área visível */
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide {
-    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Adicionando um efeito de transição automática (carrossel infinito) */
-@keyframes slideAnimation {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-/* Aplica a animação no carrossel */
-.carrossel .slides {
-    animation: slideAnimation 12s infinite;
-}
-/*Carrossel Fim
-
-
