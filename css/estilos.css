@@ -5,6 +5,7 @@
     font-family: system-ui;
     font-weight: 600;
     list-style: none;
+    color: white;
 }
 
 body {
@@ -24,13 +25,12 @@ nav {
     height: 100px;
 }
 
-nav .logo {
+.logo {
+    color: white;
     font-size: 2rem;
-    background: -webkit-gradient  (120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
+    display: inline;
+    margin-left: -100px;
+    font-weight: bold;
 }
 
 ul {
@@ -100,7 +100,7 @@ nav a:hover {
 }
 
 
-/*Carrossel começo
+
 
 .carrossel {
     width: 100%;
@@ -137,15 +137,16 @@ img {
     75% {
         transform: translateX(-300%);
     }
-    100% {
-        transform: translateX(0);
-    }
 }
 
 /* Aplica a animação no carrossel */
 .carrossel .slides {
     animation: slideAnimation 12s infinite;
 }
-/*Carrossel Fim
+/*Carrossel Fim */
+
+.info{
+    text-align: left;
+}
 
 
