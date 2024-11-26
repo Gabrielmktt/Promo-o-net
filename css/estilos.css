@@ -149,7 +149,7 @@ img {
 /*Carrossel Fim */
 
 section{
-    color: hsl(239, 69%, 51%);
+    color: hsl(0, 0%, 100%);
     text-align: left;
     padding: 20px;
     font-size: 68px;
@@ -159,6 +159,10 @@ section p {
     font-size: 20px;
     color: white;
 
+}
+
+h1 {
+    font-size: 60px;
 }
 
 
