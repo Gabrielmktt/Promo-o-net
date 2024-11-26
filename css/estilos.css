@@ -31,13 +31,11 @@ nav {
     line-height: 37px;
     padding: 10px;
     font-weight: 600px;
-    background-color: white;
 }
 
 ul {
     text-transform: uppercase;
     list-style: none;
-    background-color: white;
     
 }
 
@@ -48,7 +46,6 @@ nav ul {
     gap: 0 35px;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: white;
     
 }
 
@@ -59,7 +56,6 @@ nav a {
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     transition: 0.10s;
-    background-color: white;
 }
 
 nav a:hover {
