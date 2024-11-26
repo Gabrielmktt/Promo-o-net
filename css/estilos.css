@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     background-color: #111;
     font-family: system-ui;
+    color: white;
 }
 
 nav {
@@ -147,10 +148,18 @@ img {
 }
 /*Carrossel Fim */
 
-.info{
+section{
+    color: hsl(239, 69%, 51%);
     text-align: left;
-    color: white;
     padding: 20px;
     font-size: 68px;
 }
+
+section p {
+    font-size: 20px;
+    color: white;
+
+}
+
+
 
