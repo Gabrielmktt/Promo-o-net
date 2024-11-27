@@ -25,13 +25,12 @@ nav {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 10px;
     background-image: linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%)); /* Gradiente do vermelho ao laranja */
     -webkit-background-clip: text; /* Aplica o gradiente no texto */
     color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
-    line-height: 37px;
+    line-height: 46px;
     padding: 10px;
-    font-weight: 600px;
 }
 
 ul {
@@ -152,7 +151,7 @@ section{
     color: hsl(0, 0%, 100%);
     text-align: left;
     padding: 20px;
-    font-size: 68px;
+    font-size: 55px;
 }
 
 section p {
@@ -165,5 +164,17 @@ h1 {
     font-size: 60px;
 }
 
+.grid {
+    display: flex;
+    grid-row: auto;
+    
+    
+}
+
+.sites img{
+    display: inline;
+    width: 40%;
+
+}
 
 
