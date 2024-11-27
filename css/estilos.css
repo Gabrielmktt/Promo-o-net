@@ -179,6 +179,27 @@ h1 {
     width: 20%;
 
 }
+.promo-button {
+    background: linear-gradient(120deg, hsl(318, 94%, 61%), hsl(239, 69%, 51%)); /* Gradiente */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.promo-button:hover {
+    background: hsl(239, 69%, 51%);
+    transform: scale(1.05);
+}
+
+.promo-button:active {
+    transform: scale(0.95);
+}
 
 
 
