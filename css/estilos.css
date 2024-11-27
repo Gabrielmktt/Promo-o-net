@@ -157,6 +157,8 @@ section{
 section p {
     font-size: 20px;
     color: white;
+    width: 40%;
+    margin-left: 30px;
 
 }
 
@@ -167,14 +169,16 @@ h1 {
 .grid {
     display: flex;
     grid-row: auto;
+    text-align: center;
     
     
 }
 
 .sites img{
     display: inline;
-    width: 40%;
+    width: 20%;
 
 }
+
 
 
