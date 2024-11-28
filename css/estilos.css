@@ -147,28 +147,26 @@ img {
 }
 /*Carrossel Fim */
 
-main {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-}
-h2 {
-    font-size: 3rem;
-    padding: 10px;
-    margin-top: -30px;
+.sobre-nos {
+    width: 50%;
+    margin-left: -400px;
 }
 
-main p {
-    margin-left: -20px;
-    max-width: 500px;
-    font-size: 20px;
+.image{
+    background-image: url("C:\Users\arthur.cduarte1\OneDrive - SENAC - SP\Documentos\GitHub-Repositórios\Promo-o-net\IMAGENS\index\imagem de fundo.png"); /* Caminho da sua imagem */
+    background-size: cover; 
+    background-position: center;  
+    padding: 20px;      
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+
 }
 
-article img{
- width: 500px;
- height: 500px;
+.info {
+    font-size: 87px;
+    text-align: left;
 }
+
 
 h1 {
     font-size: 60px;
@@ -184,7 +182,18 @@ h1 {
 
 .sites img{
     display: inline;
-    width: 20%;
+    margin-top: 90px;
+    width: 10%;
+    padding: 10px;
+    transition: 0.10s;
+    margin-right: 10px;
+    gap: 10px;
+
+}
+
+.sites img:hover{
+    width: 200px;
+
 
 }
 .promo-button {
