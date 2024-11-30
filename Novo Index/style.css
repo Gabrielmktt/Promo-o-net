@@ -119,3 +119,52 @@ img {
     animation: slideAnimation 12s infinite;
 }
 /*Carrossel Fim */
+
+.sobre-nos {
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.sobre-nos h1 {
+    font-size: 66px;
+}
+
+.sobre-nos p{
+    font-size: 22px;
+    width: 50%;
+    overflow: hidden; /* Garante que o parágrafo se ajuste corretamente */
+}
+.img-float {
+    float: right; /* Faz a imagem ficar ao lado direito do texto */
+    margin-right: 150px; /* Adiciona espaçamento entre a imagem e o texto */
+    width: 30%; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    margin-top: -100px;
+  }
+  
+
+.grid {
+    display: flex;
+    grid-row: auto;
+    text-align: center;
+    margin-top: 130px;
+    
+    
+}
+
+.sites img{
+    display: inline;
+    margin-top: 20px;
+    width: 15%;
+    padding: 10px;
+    transition: 0.10s;
+    margin-right: 55px;
+    gap: 10px;
+
+}
+
+.sites img:hover{
+    width: 240px;
+
+
+}
